@@ -1,0 +1,16 @@
+{
+  "name": "@mul14/vuejsid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "Mulia Arifandi Nasution <mul14.net@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^0.10.0"
+  }
+}
