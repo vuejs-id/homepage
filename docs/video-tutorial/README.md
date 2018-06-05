@@ -1,7 +1,7 @@
 # Video Tutorial
 
 * [Membuat Todo List App dengan Vue.js dan Node.js](https://youtu.be/vd8KyEMBt98)
-* Cara Menggunakan class di Vue.js (coming soon)
+* [Menggunakan ES6 Class di Vue.js](https://youtu.be/IVbFgnqrrBA)
 * [Cara Menggunakan JSX di Vue.js](https://youtu.be/MY8PaOlylrQ)
 * [Cara Mengakses REST API dengan menggunakan Vue.js dan Axios](https://youtu.be/q1dKK7euDak)
 * [Membuat Otentikasi dengan Laravel dan Vue.js (part 1)](https://youtu.be/bx0eAttQuLA)
