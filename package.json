@@ -11,6 +11,6 @@
   "author": "Mulia Arifandi Nasution <mul14.net@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^0.10.0"
+    "vuepress": "^1.0.2"
   }
 }
