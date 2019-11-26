@@ -6,10 +6,10 @@
 
 ## Komunitas
 * [Facebook](https://www.facebook.com/groups/1675298779418239/) - Komunitas Vue.js Indonesia di Facebook.
-* [Telegram](https://t.me/vuejsid) - Komunitas Vue.js Indonesia di Telegram messenger.
+* [Telegram](https://t.me/vuejsindonesia) - Komunitas Vue.js Indonesia di Telegram messenger.
 
 ## Dokumentasi Berbahasa Indonesia
-_Coming soon ..._
+* [Website Dokumentasi](https://docs.vuejs.id/)
 
 ## Ingin Berkontribusi?
 
