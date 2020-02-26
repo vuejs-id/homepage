@@ -42,6 +42,13 @@ jobs:
         
       - name: Commit files report
         run: |
+          rm -rf .github/workflows
+          rm -rf .vuepress/theme
+          rm yarn.lock
+          rm package.json
+          rm .gitignore
+          mv docs/.vuepress/dist /
+          rm -rf docs
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
