@@ -46,4 +46,4 @@ jobs:
           github_token: ${{ secrets.GIT_TOKEN }}
           force: true
           repository: "vuejs-id/test-build-homepage"
-          directory: "./docs/.vuepress/dist"
+          directory: "docs/.vuepress/dist"
