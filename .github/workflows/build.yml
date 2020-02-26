@@ -47,7 +47,7 @@ jobs:
           rm ${{ secrets.GITHUB_WORKSPACE }}yarn.lock
           rm ${{ secrets.GITHUB_WORKSPACE }}package.json
           rm ${{ secrets.GITHUB_WORKSPACE }}.gitignore
-          mv ${{ secrets.GITHUB_WORKSPACE }}docs/.vuepress/dist ${{ secrets.GITHUB_WORKSPACE }}/
+          mv ${{ secrets.GITHUB_WORKSPACE }}docs/.vuepress/dist ./
           rm -rf ${{ secrets.GITHUB_WORKSPACE }}docs
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
