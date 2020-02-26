@@ -12,7 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2 
+        with:
+         persist-credentials: false
+         fetch-depth: 0
 
       - name: Use node 12
         uses: actions/setup-node@v1
@@ -37,16 +40,17 @@ jobs:
       - name: Build project
         run: yarn build
         
-#      - name: Commit files report
-#        run: |
-#          git config --local user.email "action@github.com"
-#          git config --local user.name "GitHub Action"
-#          git add -A
-#          git commit -m "New generated report"
-#
-#      - name: GitHub Push
-#        uses: ad-m/github-push-action@v0.5.0
-#        with:
-#          github_token: ${{ secrets.GIT_TOKEN }}
-#          directory: ./reports
+      - name: Commit files report
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Sync from homepage repo"
 
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          github_token: ${{ secrets.GIT_TOKEN }}
+          force: true
+          repository: "https://github.com/vuejs-id/test-build-homepage"
+          directory: ".vuepress/dist"
