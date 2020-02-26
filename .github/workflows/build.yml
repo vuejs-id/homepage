@@ -42,12 +42,14 @@ jobs:
         
       - name: Commit files report
         run: |
+          echo "Commit to repo"
           rm -rf .github/workflows
           rm -rf .vuepress/theme
           rm yarn.lock
           rm package.json
-          mv docs/.vuepress/dist/ ./
+          cp docs/.vuepress/dist/ ./
           rm -rf docs
+          echo "Commit to repo"
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
