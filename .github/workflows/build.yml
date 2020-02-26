@@ -39,13 +39,6 @@ jobs:
 
       - name: Build project
         run: yarn build
-        
-      - name: Commit files report
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git commit -m "Sync from homepage repo"
 
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
@@ -53,4 +46,4 @@ jobs:
           github_token: ${{ secrets.GIT_TOKEN }}
           force: true
           repository: "https://github.com/vuejs-id/test-build-homepage"
-          directory: ".vuepress/dist"
+          directory: "./docs/.vuepress/dist"
