@@ -46,7 +46,7 @@ jobs:
           rm -rf .vuepress/theme
           rm yarn.lock
           rm package.json
-          mv docs/.vuepress/dist ./
+          mv docs/.vuepress/dist/ ./
           rm -rf docs
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
