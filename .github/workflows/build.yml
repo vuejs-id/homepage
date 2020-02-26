@@ -47,7 +47,7 @@ jobs:
           rm -rf .vuepress/theme
           rm yarn.lock
           rm package.json
-          cp -r docs/.vuepress/dist/ ./
+          cp -r docs/.vuepress/dist/. ./
           rm -rf docs
           echo "Commit to repo"
           git config --local user.email "action@github.com"
