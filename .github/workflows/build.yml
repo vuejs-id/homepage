@@ -39,6 +39,13 @@ jobs:
 
       - name: Build project
         run: yarn build
+        
+      - name: Commit files report
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Sync repo from homepage"
 
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
