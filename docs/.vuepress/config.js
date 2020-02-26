@@ -13,16 +13,20 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Meetup', link: '/meetup/' },
-      { text: 'Tutorial',
+      {
+        text: 'Tutorial',
         items: [
           { text: 'Medium', link: 'https://medium.com/vuejs-id' },
           { text: 'Video Tutorial', link: '/video-tutorial/' }
-      ]},
-      { text: 'Komunitas',
+        ]
+      },
+      {
+        text: 'Komunitas',
         items: [
           { text: 'Facebook', link: 'https://www.facebook.com/groups/1675298779418239/' },
-          { text: 'Telegram', link: 'https://t.me/vuejsid' }
-      ]},
+          { text: 'Telegram', link: 'https://t.me/vuejsindonesia' }
+        ]
+      },
     ]
   }
 }
